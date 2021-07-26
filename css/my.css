@@ -1,0 +1,4 @@
+/* Here is your custom css styles. */
+:active{
+    cursor: url("/medias/cursor.cur"),auto!important;
+}
