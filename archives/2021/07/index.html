@@ -808,11 +808,12 @@ $(function () {
     </a>
 </div>
 
-	<link rel="stylesheet" href="/Bobby-Han.github.io/css/APlayer.min.css">
-<script src="/Bobby-Han.github.io/js/APlayer.min.js"></script>
-<div id="aplayer" class="aplayer" data-id="459792285" data-server="netease"
-  data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#F58EA8"></div>
-<script src="/Bobby-Han.github.io/js/music.js"></script>
+	
+	
+	<link rel="stylesheet" href="/dist/APlayer.min.css">
+	<div id="aplayer"></div>
+	<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+	<script type="text/javascript" src="/dist/music.js"></script>
 
     <script src="/Bobby-Han.github.io/libs/materialize/materialize.min.js"></script>
     <script src="/Bobby-Han.github.io/libs/masonry/masonry.pkgd.min.js"></script>
@@ -820,6 +821,7 @@ $(function () {
     <script src="/Bobby-Han.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
     <script src="/Bobby-Han.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/Bobby-Han.github.io/js/matery.js"></script>
+	
 	
 
     <!-- Baidu Analytics -->
@@ -843,6 +845,7 @@ $(function () {
     
     <script src="/Bobby-Han.github.io/libs/others/clicklove.js" async="async"></script>
     
+	
     
     <script async src="/Bobby-Han.github.io/libs/others/busuanzi.pure.mini.js"></script>
     
@@ -867,7 +870,26 @@ $(function () {
 	
     <script src="/Bobby-Han.github.io/libs/others/sakura.js" async="async"></script>
     
-	
+	<!-- 引用依赖 -->
+	<link rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+
+	<!-- 我使用的APlayer本体 -->
+	<div class="aplayer" 
+	  data-id="2465890057" 
+	  data-server="netease" 
+	  data-type="playlist" 
+	  data-fixed="true" 
+	  data-autoplay="true" 
+	  data-order="random" 
+	  data-volume="0.55" 
+	  data-theme="#cc543a" 
+	  data-preload="auto" >
+	  </div>
+	<!--如果将本体放在body里面导致页面加载出现问题，请尝试放到body体后面-->
+
 </body>
 
 </html>
