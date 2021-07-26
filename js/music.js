@@ -6,7 +6,7 @@ var aplayers = [],
 				audio: b,
 				mini: null,
 				fixed: null,
-				autoplay: !1, //控制自动播放
+				autoplay: 1, //控制自动播放
 				mutex: !0,
 				lrcType: 3,
 				listFolded: !1,
