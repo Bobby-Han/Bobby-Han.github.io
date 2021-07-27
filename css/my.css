@@ -2,6 +2,9 @@
 *{
     cursor: url("/medias/cursor1.ico"),auto!important;
 }
+:foucus{
+	cursor: url("/medias/cursor2.ico"),auto!important;
+}
 :active{
     cursor: url("/medias/cursor2.ico"),auto!important;
 }
