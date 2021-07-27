@@ -5,6 +5,16 @@
         width: 95%;
     }
 }
+header .brand-logo .logo-img{
+    display: none;
+}
+
+
+.reprint__type{
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
 
 /*中等屏幕下(平板类)的样式*/
 @media only screen and (min-width: 600px) and (max-width: 992px) {
