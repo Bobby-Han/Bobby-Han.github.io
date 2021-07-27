@@ -34,11 +34,11 @@
 }
 
 body {
-    /*background-color: #eaeaea;*/
-    background: linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)) 0% 0% / cover, url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"), url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") 0px 0px;
-    background-attachment: fixed;
+    background-color: #eaeaea;
     margin: 0;
-    color: #7F95D1;
+    color: #34495e;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 h1 {
@@ -241,7 +241,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #1a1318 0%, #1a1318 100%);
+    background-image: linear-gradient(to right, #4fc6c1 0%, #4fc6c1 100%);
+    opacity: 0.7;
 }
 
 .text-color {
@@ -528,7 +529,7 @@ header .go-back i {
     line-height: 56px;
 }
 
-
+/* 背景图效果. */
 .bg-cover {
     position: relative;
     display: flex;
@@ -542,7 +543,6 @@ header .go-back i {
     transform: translate3d(0px, 0px, 0px);
 }
 
-
 .index-cover {
     height: 100vh;
 }
@@ -550,14 +550,14 @@ header .go-back i {
 .post-cover {
     height: 40vh !important;
 }
-/*
+
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
 }
-*/
+
 .bg-cover:before,
-.bg-cover:after {
+/*.bg-cover:after {
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -567,7 +567,20 @@ header .go-back i {
     top: 0;
     content: "";
 }
-
+*/
+::-webkit-scrollbar-thumb {
+    background-color: #FF2A68;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffcacaff;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
 .bg-cover .container {
     position: relative;
     color: #fff;
@@ -1964,7 +1977,7 @@ footer .copy-right {
 }
 
 .center-caption {
-    color: #3518d2;
+    color: #525f7f;
     padding: 5px;
     border-bottom: 1px solid #d9d9d9;
 }
@@ -2138,17 +2151,4 @@ footer .copy-right {
     height: 50px;
     padding: 0;
     margin: 0;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #FF2A68;
-    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
-    border-radius: 3em;
-}
-::-webkit-scrollbar-track {
-    background-color: #ffcacaff;
-    border-radius: 3em;
-}
-::-webkit-scrollbar {
-    width: 8px;
-    height: 15px;
 }
